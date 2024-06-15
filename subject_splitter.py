@@ -22,10 +22,10 @@ values_list = [
 file_name = "recommendation_data.xlsx"
 
 # اسم العمود الذي تريد فصله
-column_to_split = "مواد.الضعف."
+column_to_split = "column_U_wanna_split"
 
 # اسماء الاعمدة التي ستنشأ
-new_columns = ["مادة_ضعف_{}".format(value) for value in values_list]
+new_columns = ["Columns_Names{}".format(value) for value in values_list]
 
 # قراءة الملف
 df = pd.read_excel(file_name)
